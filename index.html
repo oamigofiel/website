@@ -1,0 +1,307 @@
+<!-- starter template retirado de: https://getbootstrap.com/docs/5.3/getting-started/introduction/ -->
+<!doctype html>
+<html lang="pt">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!-- nome/título do documento html - muito importante-->
+
+      <!-- Primary Meta Tags -->
+      <title>Amigo Fiel - Uma plataforma para amigos dos animais</title>
+      <meta name="title" content="Amigo Fiel - Uma plataforma para amigos dos animais" />
+      <meta name="description" content="Um website com Animais para adoção e todos os detalhes que necessita para cuidar so seu cão" />
+
+      <!-- Open Graph / Facebook -->
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://metatags.io/" />
+      <meta property="og:title" content="Amigo Fiel - Uma plataforma para amigos dos animais" />
+      <meta property="og:description" content="Um website com Animais para adoção e todos os detalhes que necessita para cuidar so seu cão" />
+      <meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
+
+      <!-- Twitter -->
+      <meta property="twitter:card" content="summary_large_image" />
+      <meta property="twitter:url" content="https://metatags.io/" />
+      <meta property="twitter:title" content="Amigo Fiel - Uma plataforma para amigos dos animais" />
+      <meta property="twitter:description" content="Um website com Animais para adoção e todos os detalhes que necessita para cuidar so seu cão" />
+      <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
+
+<!-- Meta Tags Generated with https://metatags.io -->      
+      <!-- livraria de estilos do boostrap, essencial para utilizar o framework-->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+      <script src="https://kit.fontawesome.com/7ec6a958ed.js" crossorigin="anonymous"></script>
+
+      <!-- Carregar a livraria Google fonts 
+      https://fonts.google.com/ -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+      <!-- adiciona folha de estilos CSS -->
+      <link rel="stylesheet" href="style.css">
+      
+   </head>
+   <body>
+      <!-- inicio do corpo do documento html -->
+      <!-- contentor: são utilizados ​​para conter, preencher e centrar o seu conteúdo
+         https://getbootstrap.com/docs/5.0/layout/containers/#default-container -->
+
+      <div class="container">
+
+         <div class="row">
+            <div class="col-md-4 offset-md-4 logo-amigofiel">
+               <a href="index.html">
+               <img src="imagens/logo-amigofiel.png" alt="Logo do website Amigo Fiel" class="img-fluid">
+               </a> 
+            </div>
+         <div class="col-md-10 offset-md-1">
+            <nav class="navbar navbar-expand-lg">
+               <div class="container-fluid">
+                  <a class="navbar-brand" href="#"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <!-- justify-content-center para centrar o menu
+                     https://getbootstrap.com/docs/4.0/utilities/flex/#justify-content -->
+                  <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                     <ul class="navbar-nav">
+                        <li class="nav-item">
+                           <a class="nav-link" aria-current="page" href="adotar.html">Adotar</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" aria-current="page" href="anunciar.html">Anunciar</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="comoajudar.html">Como Ajudar?</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="associacoes.html">Associações</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="sobre.html">Sobre o projeto</a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </nav>
+         </div>
+        </div><!-- Fim ROW menu -->
+
+
+        <div class="row">
+            <div class="col-md-12">
+                <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                           <a href="anunciar.html"><img src="imagens/hero-img-1.png" class="d-block w-100" alt="..."></a>
+                          </div>
+                          <div class="carousel-item">
+                           <a href="anunciar.html"><img src="imagens/hero-img-2.png" class="d-block w-100" alt="..."></a>
+                          </div>    
+                        </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>                
+            </div>
+            <div class="col-md-6 offset-md-3 main-title-center">
+               <h1>Resgate e reintegração de animais domésticos abandonados</h1>
+            </div>
+         </div><!-- Fim ROW carrossel -->
+
+
+         <div class="row">
+            <div class="col-md-12">
+               <h2>O Projeto</h2>
+            </div>
+            <div class="col-md-4">
+               <a href="info.html">
+                  <img src="imagens/dest-1.png" alt="" class="img-fluid">
+                  <h3>O apadrinhamento cobrirá parte das despesas de alimentação</h3>
+               </a>
+            </div>
+            <div class="col-md-4">
+               <a href="info.html">
+                  <img src="imagens/dest-2.png" alt="" class="img-fluid">
+                  <h3>Os fãs, amigos e amigas, padrinhos e madrinhas poderão agendar visitas</h3>
+               </a>
+            </div>
+            <div class="col-md-4">
+               <a href="info.html">
+                  <img src="imagens/dest-3.png" alt="" class="img-fluid">
+                  <h3>Escolher um cão não é fácil, mas nós ajudamos.</h3>
+               </a>
+            </div>
+        </div><!-- Fim ROW projeto-->
+        
+
+        <div class="row  blue-background">
+         <div class="col-md-8 offset-md-2 main-title-center">
+            <h3>Consideramos que é um dever de todos contribuir para qualquer causa que tenha como finalidade construir um mundo melhor</h2>
+            <div class="ratio ratio-16x9">
+               <iframe width="1280" height="720" src="https://www.youtube.com/embed/LpSndT2grOQ" title="DOG TV: 12 Hours of Soothing Music for Anxious Dogs When Home Alone - Best Entertain Videos for Dogs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+             </div>
+         </div>
+         <div class="col-md-6 offset-md-3 main-title-center">
+            <p>Pode encontrar o animal que procura de entre os milhares disponíveis para adopção responsável</p>
+         </div>
+      </div><!-- Fim ROW Video -->
+
+
+         <div class="row dogs-to-adopt">
+            <div class="col-md-12">
+               <h2>Cães para adoção</h2>
+            </div>
+            <div class="col-md-3">
+                  <a href="dog.html">
+                     <img src="imagens/dog-01.png" alt="" class="img-fluid">
+                  </a>
+                  <h3>Nome do cão</h3>
+                  <ul>
+                     <li><b>Porte: </b>Grande</li>
+                     <li><b>Cor: </b>Castanho</li>
+                     <li><b>Pêlo: </b>Curto</li>
+                     <li><b>Idade: </b>4 anos</li>
+                  </ul>
+            </div>
+            <div class="col-md-3">
+               <a href="">
+               <img src="imagens/dog-02.png" alt="" class="img-fluid">
+            </a>
+            <h3>Nome do cão</h3>
+            <ul>
+               <li><b>Porte: </b>Grande</li>
+               <li><b>Cor: </b>Castanho</li>
+               <li><b>Pêlo: </b>Curto</li>
+               <li><b>Idade: </b>4 anos</li>
+            </ul>
+            </div>
+            <div class="col-md-3">
+               <a href="dog.html">
+                  <img src="imagens/dog-03.png" alt="" class="img-fluid">
+               </a>
+               <h3>Nome do cão</h3>
+               <ul>
+                  <li><b>Porte: </b>Grande</li>
+                  <li><b>Cor: </b>Castanho</li>
+                  <li><b>Pêlo: </b>Curto</li>
+                  <li><b>Idade: </b>4 anos</li>
+               </ul>
+         </div>
+            <div class="col-md-3">
+               <a href="dog.html">
+                  <img src="imagens/dog-04.png" alt="" class="img-fluid">
+               </a>
+               <h3>Nome do cão</h3>
+               <ul>
+                  <li><b>Porte: </b>Grande</li>
+                  <li><b>Cor: </b>Castanho</li>
+                  <li><b>Pêlo: </b>Curto</li>
+                  <li><b>Idade: </b>4 anos</li>
+               </ul>
+         </div>
+            <div class="col-md-3">
+               <a href="dog.html">
+                  <img src="imagens/dog-05.png" alt="" class="img-fluid">
+               </a>
+               <h3>Nome do cão</h3>
+               <ul>
+                  <li><b>Porte: </b>Grande</li>
+                  <li><b>Cor: </b>Castanho</li>
+                  <li><b>Pêlo: </b>Curto</li>
+                  <li><b>Idade: </b>4 anos</li>
+               </ul>
+         </div>
+            <div class="col-md-3">
+               <a href="dog.html">
+                  <img src="imagens/dog-06.png" alt="" class="img-fluid">
+               </a>
+               <h3>Nome do cão</h3>
+               <ul>
+                  <li><b>Porte: </b>Grande</li>
+                  <li><b>Cor: </b>Castanho</li>
+                  <li><b>Pêlo: </b>Curto</li>
+                  <li><b>Idade: </b>4 anos</li>
+               </ul>
+         </div>
+            <div class="col-md-3">
+               <a href="dog.html">
+                  <img src="imagens/dog-07.png" alt="" class="img-fluid">
+               </a>
+               <h3>Nome do cão</h3>
+               <ul>
+                  <li><b>Porte: </b>Grande</li>
+                  <li><b>Cor: </b>Castanho</li>
+                  <li><b>Pêlo: </b>Curto</li>
+                  <li><b>Idade: </b>4 anos</li>
+               </ul>
+         </div>
+            <div class="col-md-3">
+               <a href="dog.html">
+                  <img src="imagens/dog-08.png" alt="" class="img-fluid">
+               </a>
+               <h3>Nome do cão</h3>
+               <ul>
+                  <li><b>Porte: </b>Grande</li>
+                  <li><b>Cor: </b>Castanho</li>
+                  <li><b>Pêlo: </b>Curto</li>
+                  <li><b>Idade: </b>4 anos</li>
+               </ul>
+         </div>
+      </div><!-- Fim ROW cães para adoção -->
+
+
+      <div class="row pre-footer">
+         <div class="col-md-2 offset-md-5">
+            <a href="index.html">
+               <img src="imagens/logo-amigofiel-negative.png" alt="" class="img-fluid">
+            </a>
+         </div>
+      </div><!-- Fim ROW rodape azul -->
+
+
+         <div class="row footer">
+            <div class="col-md-6">
+               <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+               <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+               <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+               <a href="https://www.tiktok.com" target="_blank"><i class="fa-brands fa-tiktok"></i></a></a>
+               
+               
+               
+            </div>
+            <div class="col-md-6">
+               <ul>
+                  <li>
+                     <p>@ 2024 amigo fiel - Todos os direitos reservados</p>
+                  </li>
+                  <li>
+                     <p><a href="mailto:info@amigofiel.com">info@amigofiel.com</a></p>
+                  </li>
+                  <li>
+                     <p><a href="tel:+351912654833">(+351) 912 654 833</a></p>
+                  </li>
+               </ul>
+               
+               
+               
+            </div>
+         </div><!-- Fim ROW rodape azul -->
+
+
+      </div><!--fim container -->
+      <!-- não escrever depois desta linha -->
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+   </body>
+</html>
